@@ -1,13 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import NavBar from 'react-bootstrap/Navbar';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavbarComp from './Components/NavbarComp';
 
 function App() {
   return (
     <div className="App">
-  <h1>Castanitas</h1>
-     <NavBar/>
+      
+      <NavbarComp/>
+
     </div>
   );
 }
