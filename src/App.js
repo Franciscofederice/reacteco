@@ -2,15 +2,20 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComp from './Components/NavbarComp';
 import Cards from './Components/Cards';
-import ItemCount from './components/ItemCount';
+import ItemCount from './Components/ItemCount/ItemCount';
 
 function App() {
+  const onAdd =(count)=>{
+    console.log(`la cantidad es : ${count}`)
+    alert(`la cantidad es : ${count}`)    
+        
+}
   return (
     <div className="App">
-     <ItemCount/>
+   
       <NavbarComp/>
       <Cards/>
- 
+      <ItemCount initial={1} stock={20} onAdd={onAdd} />
     </div>
   );
 }
